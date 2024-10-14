@@ -14,7 +14,7 @@ public partial class MainPage : ContentPage
         Uri requestedUri = new Uri(e.Url);
         //Uri allowedDomain = new Uri("https://codeblocks.olivetree.software/");
         //Uri allowedDomain = new Uri("https://discourse.northeastmennonite.com/");
-        Uri allowedDomain = new Uri("https://www.usps.com/");
+        Uri allowedDomain = new Uri("https://actual.rls23.us/");
 
         bool allowInApp = (requestedUri.Host.Substring(requestedUri.Host.Length - 8) == allowedDomain.Host.Substring(allowedDomain.Host.Length - 8));
         if (!allowInApp)
